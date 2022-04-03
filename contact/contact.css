@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+    list-style:none;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    background-image: url(/jason-leung-poI7DelFiVA-unsplash.jpg);
+    height: 700px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.header-h1{
+position: absolute;
+top: 480px;
+left: 100px;
+color: rgb(255, 255, 255);
+font-family: 'Inter', sans-serif;
+}
+.header-p{
+    position: absolute;
+    top: 530px;
+    left: 100px; 
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+background-color: rgb(0, 0, 0);
+}
+header div h1{
+    color: white;
+}
+header div ul{
+display: flex;
+background-color: transparent;
+}
+header div ul li{
+    margin-right: 30px;
+}
+header div ul li a{
+    color: white;
+    font-size: 27px;
+    font-family: 'Inter', sans-serif;
+}
+header div ul li a:hover{
+    color: rgb(255, 0, 0);
+    border-bottom: 2px solid white;
+
+}
+header div ul li .header-a{
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+header div{
+    padding: 10px 0px 10px 25px;
+box-shadow: 0 0 20px rgb(255, 0, 128);
+}
+.flbutton:hover .foodlist{
+    display: block;
+}
+.flbutton{
+    position: relative;
+}
+.foodlist{
+position: absolute;
+left:-20px;
+margin-top: 2px;
+    width: 150px;
+    background-color:rgb(39, 39, 39);
+    box-shadow: 10px red;
+display: none;
+}
+.foodlist li{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+font-size: 20px;
+border-radius: 10px;
+background-color: rgb(25, 90, 90);
+width: 75%;
+}
+.foodlist li:hover{
+    color: aliceblue;
+background-color: rgb(49, 153, 201);
+}
+.foodlist li a{
+color: rgb(255, 255, 255);
+font-size: 20px;
+}
+section .section-h1{
+    margin-top: 50px;
+    text-align: center;
+}
+section .section-p{
+    text-align: center;
+    max-width: 50%;
+    margin-left: 320px;
+    margin-top: 50px;
+}
+footer{
+    height: 70px;
+    position: relative;
+background-color: rgb(180, 180, 180);
+margin-top: 50px;
+}
+
+footer h1{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    text-align: center;
+}
+.signup-buttom button{
+    background-color: rgb(66, 146, 146);
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+.signup-buttom button:hover{
+    background-color: rgb(42, 182, 182);
+}
+.signup-buttom{
+    margin-right: 10px;
+}
+.second-div{
+    display: flex;
+    margin-top: 200px;
+}
+.second-div .div{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 70px;
+}
+section .div-h1{
+margin-top: 0px;
+color: green;
+}
+section .div-p{
+width: 70%;
+text-align: center;
+margin-left: 10%;
+margin-top: 50px;
+}
+
+.phone{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 18%;
+}
+.phone h2{
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(95, 95, 95);
+}
+.email{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 18%;
+}
+.email h2{
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(95, 95, 95);
+
+}
+.icons{
+    margin-top: 50px;
+    text-align: center;
+}
+.fa-solid{
+    color: green;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: large;
+}
+.fa-brands{
+    color: rgb(87, 87, 87);
+    font-size: 25px;
+    margin-right: 20px;
+    padding: 10px 10px;
+}
+.fa-brands:hover{
+    color: white;
+    background-color:rgb(87, 87, 87) ;
+}
+.contact{
+height:550px;
+
+}
+.form-name{
+    margin-left: 25%;
+    margin-top: 50px;
+    height: 35px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+.form-email{
+    margin-left: 25%;
+    margin-top: 50px;
+    height: 35px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}.form-message{
+    margin-left: 25%;
+    margin-top: 50px;
+    height: 100px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+.form-file{
+    margin-left: 25%;
+    margin-top: 50px;
+    height: 35px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+.form-submit{
+    margin-left: 50%;
+    margin-top: 50px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 15px;
+    box-shadow: 10px black;
+    border-radius: 10px;
+    background-color: rgb(57, 150, 61);
+}

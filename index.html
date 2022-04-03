@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" media="(min-width:1000px)">
+    <link rel="stylesheet" href="mediumscreen.css" media="(min-width:550px) and (max-width:999px)">
+    <link rel="stylesheet" href="smallscreen.css" media="(min-width:0px) and (max-width:550px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="header-h1">Simple House</h1>
+        <p class="header-p">new restaurant template</p>
+        <div class="large-nav">
+
+            <h1>Simple House</h1>
+            <i id="fa" class="fa-solid fa-bars"></i><i id="false" class="fa-solid fa-xmark"></i>
+
+            <nav>
+                <ul>
+                    <li><a class="header-a" href="">Home</a></li>
+                    <li class="flbutton"><a href="">Food list</a>
+                        <ul class="foodlist">
+                            <a href="">
+                                <li>Pizza</li>
+                            </a><a href="">
+                                <li>Salad</li>
+                            </a><a href="">
+                                <li>Noodle</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a><a href="">
+                                <li>text</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="/contact/contact.html">Contact</a></li>
+                    <a href="checkout.html" class="signup-buttom"><button>Checkout</button></a>
+                    <a href="" class="signup-buttom"><button>Sign up</button></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="mid-nav">
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a class="Foodbutton" href="">
+                    <li>Food List <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+                <a href="">
+                    <li>text</li>
+                </a>
+            </ul>
+            <a href=""><button>Sign up</button></a>
+            <i id="fa-solid" class="fa-solid fa-angle-down"></i>
+        </div>
+    </header>
+    <section>
+
+        
+<div class="slide-show">
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+            
+            width: 70%;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/pexels-pixabay-260922.jpg"style=width:100%>
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="jason-leung-poI7DelFiVA-unsplash.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="jason-leung-poI7DelFiVA-unsplash.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</div>
+    
+<div class="first">
+   <div class="h"> <h1 class="section-h1">Welcome to Simple House</h1>
+    <p class="section-p">Total 4 HTML pages are included in this template.
+    </p></div>
+        <div class="work-hours">
+            <div class="footer-info">
+              <div class="section-title">
+                <h2 class="">Open Hours</h2>
+              </div>
+              <div class="">
+                <p>Monday: Closed</p>
+                <div class="strong"><strong>Tuesday to Friday</strong>
+                  <p>7:00 AM - 9:00 PM</p>
+                </div>
+                <div class="strong"> <strong>Saturday - Sunday</strong>
+                  <p>11:00 AM - 10:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+        <div class="bestsales">
+            <h1 class="bestsales-h1">Best Sales</h1>
+            <div class="bestsales-div">
+
+                <div class="div1">
+                    <div class="d1">
+                        <img src="/img/01.jpg">
+                        <h1>Fusce dictum finibus</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$45 / $55</h1>
+                        <a href=""><button>Buy</button></a>
+
+                    </div>
+                    <div class="d2">
+                        <img src="/img/02.jpg">
+                        <h1>Aliquam sagittis</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$65 / $70</h1>
+                        <a href=""><button>Buy</button></a>
+
+                    </div>
+                </div>
+
+
+                <div class="div2">
+                    <div class="d3">
+                        <img src="/img/03.jpg">
+                        <h1>Sed varius turpis</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$30.50</h1>
+                        <a href=""><button>Buy</button></a>
+
+                    </div>
+                    <div class="d4">
+                        <img src="/img/04.jpg">
+                        <h1>Aliquam sagittis</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$25.50</h1>
+                        <a href=""><button>Buy</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bestsales1-div">
+                <div class="div3">
+                    <div class="d5">
+                        <img src="/img/05.jpg">
+                        <h1>Sed ultricies dui</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$94</h1>
+                        <a href=""><button>Buy</button></a>
+                    </div>
+                    <div class="d6">
+                        <img src="/img/06.jpg">
+                        <h1>Donec porta consequat</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$94</h1>
+                        <a href=""><button>Buy</button></a>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="d7">
+                        <img src="/img/07.jpg">
+                        <h1>Sed ultricies dui</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$94</h1>
+                        <a href=""><button>Buy</button></a>
+                    </div>
+                    <div class="d8">
+                        <img src="/img/08.jpg">
+                        <h1>Donec porta consequat</h1>
+                        <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                        <h1 class="h1-price">$94</h1>
+                        <a href=""><button>Buy</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bestsales-div">
+            <div class="div1">
+                <div class="d1">
+                    <img src="/img/01.jpg">
+                    <h1>Fusce dictum finibus</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$45 / $55</h1>
+                    <a href=""><button>Buy</button></a>
+
+                </div>
+                <div class="d2">
+                    <img src="/img/02.jpg">
+                    <h1>Aliquam sagittis</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$65 / $70</h1>
+                    <a href=""><button>Buy</button></a>
+
+                </div>
+            </div>
+
+
+            <div class="div2">
+                <div class="d3">
+                    <img src="/img/03.jpg">
+                    <h1>Sed varius turpis</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$30.50</h1>
+                    <a href=""><button>Buy</button></a>
+
+                </div>
+                <div class="d4">
+                    <img src="/img/04.jpg">
+                    <h1>Aliquam sagittis</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$25.50</h1>
+                    <a href=""><button>Buy</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bestsales1-div">
+            <div class="div3">
+                <div class="d5">
+                    <img src="/img/05.jpg">
+                    <h1>Sed ultricies dui</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$94</h1>
+                    <a href=""><button>Buy</button></a>
+                </div>
+                <div class="d6">
+                    <img src="/img/06.jpg">
+                    <h1>Donec porta consequat</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$94</h1>
+                    <a href=""><button>Buy</button></a>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="d7">
+                    <img src="/img/07.jpg">
+                    <h1>Sed ultricies dui</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$94</h1>
+                    <a href=""><button>Buy</button></a>
+                </div>
+                <div class="d8">
+                    <img src="/img/08.jpg">
+                    <h1>Donec porta consequat</h1>
+                    <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                    <h1 class="h1-price">$94</h1>
+                    <a href=""><button>Buy</button></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <div><h2>Book A Table</h2>
+                <h1>Book Your Table For Private Dinners & Happy Hours</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.</p></div>
+            <form action="" method="post" class="book-form">
+<input class="name" type="text" name="name" placeholder="Name">
+<input class="email" type="email" name="email" placeholder="Email">
+<input class="number" type="number" name="mobilenumber" placeholder="Mobile number">
+<input class="date" type="date" name="date" placeholder="Date">
+<input class="time" type="time" name="time" placeholder="Time">
+<select name="number of guest" id="guest">
+    <option value="1Guest">1Guest</option>
+    <option value="2Guest">2Guest</option>
+    <option value="3Guest">3Guest</option>
+    <option value="4Guest">4Guest</option>
+    <option value="5Guest">5Guest</option>
+    <option value="6Guest">6Guest</option>
+    <option value="7Guest">7Guest</option>
+    <option value="8Guest">8Guest</option>
+    <option value="9Guest">9Guest</option>
+    <option value="10Guest">10Guest</option>
+    <option value="11Guest">11Guest</option>
+    <option value="12Guest">12Guest</option>
+</select>
+<button type="submit">submit</button>
+</form>
+        </div>
+        <div class="ourstory">
+            <img src="/img/gallery-bg.jpg">
+            <div>
+                <h1>OUR STORY</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo
+                    nibh.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
+                    commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare</p>
+            </div>
+        </div>
+        <form action="" method="post" class="signup-form" dir="rtl">
+            <h1>Login</h1>
+            <input type="email" name="email" placeholder="Enter Your Number or Email" class="email1">
+            <input type="password" name="password" placeholder="Acount Password" class="password">
+            <a href=""><button type="submit"><a href="">Login</a></button></a>
+            <a href="/signup/signup.html" class="signup">Create New Acount</a>
+            <a href="" class="signup2">reset your password</a>
+        </form>
+        
+    </section>
+    <footer>
+        <div class="second-div">
+<form method="post" class="contact">
+            <input class="form-name" type="text" placeholder="Name" name="name">
+            <input class="form-email" type="email" name="Email" placeholder="Email">
+            <input class="form-message" type="text" name="Message" placeholder="Message">
+            <input class="form-file" type="file">
+<a href=""><button class="form-submit" type="submit">Send</button></a>
+        </form>
+        </div>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i>                    </a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <a href="#" class="block1"><div class="block"><i class="fa-solid fa-arrow-up"></i></div>
+    </a>
+</body>
+
+</html>
